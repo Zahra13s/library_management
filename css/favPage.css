@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+
+:root{
+    --title-font: "Fira Sans", sans-serif;
+    --description-font: "Montserrat", sans-serif;
+    --paragraph-font: "Sedan SC", serif;
+    --bg-color: background: rgb(231,111,81);
+    background: radial-gradient(circle, rgb(231, 111, 81) 0%, rgba(238,137,89,1) 100%);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationBar{
+    height: auto;
+    width: 100%vw;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background: radial-gradient(circle, #B9B5FF 0%, #9BA9FF 100%);
+    border: 2px solid rebeccapurple;
+    box-shadow: 5px 7px 5px rgba(220, 53, 38, 0.549);
+}
+
+.navigationBar ul li{
+    list-style: none;
+}
+
+.navigationBar .rightContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationBar .rightContainer img{
+    width: 50px;
+    height: 50px;
+}
+
+.navigationBar .leftContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.leftContainer ul li{
+    height: 100%;
+    font-size: 25px;
+}
+
+.leftContainer .profileContainer{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 10px;
+
+}
+
+.leftContainer .home{
+    margin-right: 15px;
+}
+
+
+.leftContainer .nameCity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+   
+}
+
+.nameCity .name,
+.nameCity .town{
+    font-family: var(--title-font);
+}
+
+.nameCity .name{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.nameCity .town{
+    font-size: small;
+    align-self: start;
+}
+
