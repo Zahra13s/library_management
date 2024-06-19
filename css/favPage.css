@@ -5,20 +5,19 @@
     --description-font: "Montserrat", sans-serif;
     --paragraph-font: "Sedan SC", serif;
     --bg-color: background: rgb(231,111,81);
-    background: radial-gradient(circle, rgb(231, 111, 81) 0%, rgba(238,137,89,1) 100%);
-
+    background-color: #f3fcf0;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 .navigationBar{
     height: auto;
     width: 100%vw;
-    background-color: red;
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
@@ -26,7 +25,7 @@
     border-radius: 10px;
     background: radial-gradient(circle, #B9B5FF 0%, #9BA9FF 100%);
     border: 2px solid rebeccapurple;
-    box-shadow: 5px 7px 5px rgba(220, 53, 38, 0.549);
+    box-shadow: 5px 7px 5px #c17c74;
 }
 
 .navigationBar ul li{
@@ -93,3 +92,38 @@
     align-self: start;
 }
 
+.book_type img{
+    width: 20px;
+    height: auto;
+   
+}
+
+.book_type ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.book_type ul li{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    width: 150px;
+    height: auto;
+    font-size: 20px;
+    font-family: var(--description-font);
+    
+}
+
+.main_section{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    
+}
+
+
+.main_section .book_type{
+    width: 100%vw;
+    
+}
