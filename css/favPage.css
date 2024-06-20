@@ -100,18 +100,25 @@
 
 .book_type ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
+
 }
 
 .book_type ul li{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 5px;
+    padding: 5px;
     width: 150px;
     height: auto;
     font-size: 20px;
-    font-family: var(--description-font);
+    font-family: var(--paragraph-font);
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
     
 }
 
@@ -126,4 +133,26 @@
 .main_section .book_type{
     width: 100%vw;
     
+}
+
+.book_list{
+
+}
+
+.book_list .book_container{
+    width: 200px;
+    height: 325px;
+    border: 1px solid red;
+    padding: 5px;
+    background-color: rgb(31, 68, 96);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    
+}
+
+.book_picture img{
+    width: 150px;
+    height: auto;
 }
