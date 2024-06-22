@@ -104,18 +104,17 @@ p {
 
   .side-nav {
     width: 100vw;
-    height: 3.5vh;
+    height: 3vh;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .profile,
-  .infos{
-    flex: 1;
+  .side-nav .profile{
+    height: 5vh;
   }
-
-  .side-nav ul{
-    flex: 4;
+  
+  .side-nav .profile h1{
+    font-size: 24px;
   }
 
   .side-nav .profile .pf {
@@ -123,7 +122,7 @@ p {
   }
 
   .side-nav .profile p {
-    display: none;
+    font-size: 12px;
   }
 
   .side-nav ul {
@@ -131,12 +130,21 @@ p {
     flex-direction: row;
     align-items: center;
     margin: 0;
+    padding: 0px 15px;
   }
 
   .side-nav ul li{
-    padding: 0px;
+    padding: 5px 10px;
     border: 0px!important;
     font-size: 14px;
+    margin: 0px 10px!important;
+    border-radius: 15px;
+    box-shadow: inset 5px 7px 10px rgba(247, 201, 182, 0.25), 
+    inset -5px -7px 10px rgba(222, 153, 220,0.25); 
+  }
+
+  .side-nav ul li img{
+    margin: 0px 5px;
   }
 
   .infos{
@@ -144,6 +152,12 @@ p {
   }
 
   .infos span{
-    font-size: 13px;
+    display: none;
+  }
+}
+
+@media (max-width:1024px) {
+  .side-nav .profile p{
+    display: none;
   }
 }
